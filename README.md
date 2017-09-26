@@ -20,4 +20,11 @@ A Catan telepesei című társasjáték online, böngészőben játszható verzi
   * Játék lobby létrehozása, megszüntetése, tetszőleges játék lobby-hoz való csatlakozás lehetősége
    * Privát - jelszóval védett
    * Publikus
+
 ### Entitások
+* User
+* Channel
+* Lobby
+* Game
+* Map
+* Hexagon
