@@ -14,12 +14,12 @@ A Catan telepesei című társasjáték online, böngészőben játszható verzi
   * Barátok kezelése
   * Private, Public channel-ek létrehozása, megszüntetése, tetszőleges channel-hez való csatlakozás lehetősége
   * Valós idejű kommunikáció bejelentkezett felhasználókkal
-   * Global channel
-   * Private channel - jelszóval védett
-   * Public channel
+    * Global channel
+    * Private channel - jelszóval védett
+    * Public channel
   * Játék lobby létrehozása, megszüntetése, tetszőleges játék lobby-hoz való csatlakozás lehetősége
-   * Privát - jelszóval védett
-   * Publikus
+    * Privát - jelszóval védett
+    * Publikus
 
 ### Entitások
 * User
