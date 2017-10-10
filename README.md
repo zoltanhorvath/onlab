@@ -29,3 +29,6 @@ A Catan telepesei című társasjáték online, böngészőben játszható verzi
 * Game
 * Map
 * Hexagon
+
+### Ábra
+![Services Overview](https://github.com/zoltanhorvath/onlab/blob/master/Services%20Overview.jpg)
