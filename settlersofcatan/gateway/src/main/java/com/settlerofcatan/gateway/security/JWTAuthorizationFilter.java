@@ -1,8 +1,6 @@
 package com.settlerofcatan.gateway.security;
 
-import io.jsonwebtoken.Jwts;
 import jwt.JWTUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -14,14 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static jwt.SecurityConstants.*;
-
+import static jwt.SecurityConstants.HEADER_STRING;
+import static jwt.SecurityConstants.TOKEN_PREFIX;
 
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
-    @Autowired
-    private JWTUtil jwtUtil;
+    private JWTUtil jwtUtil = new JWTUtil();
 
     public JWTAuthorizationFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);

@@ -14,6 +14,7 @@ public class ApplicationUser {
     private String email;
     private String nickname;
     private String password;
+
     @ManyToOne
     private ApplicationUserRole applicationUserRole;
 
@@ -81,7 +82,8 @@ public class ApplicationUser {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", nickname='" + nickname + '\'' +
-                //", applicationUserRole='" + applicationUserRole.getName()+ '\''+
+                ", password='" + password + '\'' +
+                ", applicationUserRole=" + applicationUserRole.getName() +
                 '}';
     }
 }

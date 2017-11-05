@@ -15,11 +15,6 @@ public class GatewayApplication {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    public JWTUtil jwtUtil(){
-        return new JWTUtil();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }

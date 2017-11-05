@@ -1,8 +1,11 @@
 package com.settlerofcatan.gateway.dto;
 
+
+import jwt.RoleType;
+
 public class ApplicationUserRoleDTO {
     private Long id;
-    private String name;
+    private RoleType name;
     private String description;
 
     public Long getId() {
@@ -13,11 +16,11 @@ public class ApplicationUserRoleDTO {
         this.id = id;
     }
 
-    public String getName() {
+    public RoleType getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(RoleType name) {
         this.name = name;
     }
 
@@ -27,5 +30,14 @@ public class ApplicationUserRoleDTO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "ApplicationUserRoleDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

@@ -22,7 +22,6 @@ import static jwt.SecurityConstants.SECRET;
 @RequestMapping(value = "api/auth")
 public class AuthenticationController {
 
-
     private AuthenticationManager authenticationManager;
 
     @Autowired

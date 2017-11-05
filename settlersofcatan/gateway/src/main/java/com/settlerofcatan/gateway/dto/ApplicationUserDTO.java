@@ -67,6 +67,10 @@ public class ApplicationUserDTO {
 
     @Override
     public String toString() {
+        String roleName = "No role";
+        if(role != null){
+            roleName = role.getName().name();
+        }
         return "ApplicationUserDTO{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
@@ -74,7 +78,7 @@ public class ApplicationUserDTO {
                 ", email='" + email + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", password='" + password + '\'' +
-                ", roleName='" + role.getName() + '\'' +
+                ", role=" + roleName +
                 '}';
     }
 }
